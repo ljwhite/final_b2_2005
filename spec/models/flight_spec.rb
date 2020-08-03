@@ -22,7 +22,7 @@ describe Flight, type: :model do
       @passenger1 = Passenger.create!(name: "Time", age: 16)
       @passenger2 = Passenger.create!(name: "Meg", age: 15)
       @passenger3 = Passenger.create!(name: "Monica", age: 52)
-      @passenger4 = Passenger.create!(name: "Joe", age: 50)
+      @passenger4 = Passenger.create!(name: "Joe", age: 18)
 
       FlightPassenger.create!(flight: @flight1, passenger: @passenger1)
       FlightPassenger.create!(flight: @flight1, passenger: @passenger2)

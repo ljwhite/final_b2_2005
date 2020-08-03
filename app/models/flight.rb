@@ -4,10 +4,10 @@ class Flight < ApplicationRecord
   has_many :passengers, through: :flight_passengers
 
   validates_presence_of :number,
-                      :date,
-                      :time,
-                      :arrival,
-                      :departure
+                        :date,
+                        :time,
+                        :arrival,
+                        :departure
 
   def count_of_minors
     passengers.where("age < ?", 18).count

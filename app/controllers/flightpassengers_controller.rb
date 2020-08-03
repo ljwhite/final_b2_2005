@@ -7,6 +7,4 @@ class FlightpassengersController < ApplicationController
     redirect_to "/passengers/#{passenger.id}"
   end
 
-  private
-
 end

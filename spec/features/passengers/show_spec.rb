@@ -30,7 +30,7 @@ RSpec.describe 'As a visitor' do
       expect(current_path).to eq("/flights/#{@flight1.id}")
     end
 
-    it "there is a form on the passenger show page that asks for a new flight id. Submitting this form will add this flight to the list of this passengers flights" do
+    it "there is a form on the passenger show page that asks for a new flight number. Submitting this form will add this flight to the list of this passengers flights" do
       visit "/passengers/#{@passenger1.id}"
       expect(page).to have_content("Add flight for #{@passenger1.name}")
       num = 104
