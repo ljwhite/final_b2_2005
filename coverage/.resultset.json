@@ -218,23 +218,6 @@
           null
         ]
       },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/airline.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/flight.rb": {
         "lines": [
           1,
@@ -248,10 +231,25 @@
           null,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/passenger.rb": {
+      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/airline.rb": {
         "lines": [
           1,
           1,
@@ -271,50 +269,17 @@
           null
         ]
       },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/controllers/passengers_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/controllers/application_controller.rb": {
+      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/models/passenger.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/controllers/flights_controller.rb": {
-        "lines": [
           1,
           null,
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/litowhite/turing/mod2/assessments/final_assessment_1/final_b2_2005/app/controllers/flightpassengers_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1596475791
+    "timestamp": 1596476434
   }
 }
