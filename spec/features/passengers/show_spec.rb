@@ -7,6 +7,7 @@ RSpec.describe 'As a visitor' do
       @flight1 = @airline.flights.create(number: 101, date: "08/03/20", time: "3:30pm MT", departure: "Denver", arrival: "Dallas")
       @flight2 = @airline.flights.create(number: 102, date: "08/04/20", time: "8:15pm CT", departure: "Dallas", arrival: "Los Angeles")
       @flight3 = @airline.flights.create(number: 103, date: "08/05/20", time: "10:00pm PT", departure: "Los Angeles", arrival: "San Francisco")
+      @flight4 = @airline.flights.create(number: 104, date: "08/06/20", time: "9:45am PT", departure: "San Francisco", arrival: "Denver")
       @passenger1 = Passenger.create!(name: "Time", age: 16)
 
       FlightPassenger.create!(flight: @flight1, passenger: @passenger1)
@@ -28,5 +29,12 @@ RSpec.describe 'As a visitor' do
       click_on "#{@flight1.number}"
       expect(current_path).to eq("/flights/#{@flight1.id}")
     end
+
+    it "there is a form on the passenger show page that asks for a new flight id. Submitting this form will add this flight to the list of this passengers flights" do
+      visit "/passengers/#{@passenger1.id}"
+      expect(page).to have_content("Add flight for #{@passenger1.name}")
+    end
+
+
   end
 end
