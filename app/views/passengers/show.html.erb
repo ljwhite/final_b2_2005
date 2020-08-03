@@ -11,7 +11,7 @@ Flights
 
 <h3>Add flight for <%= @passenger.name %></h3>
 
-<%= form_tag "/passengers/#{@passenger.id}/flightpassengers/", method: :post %>
+<%= form_tag "/passengers/#{@passenger.id}/flightpassengers", method: :post do %>
   <%= label_tag :number %>
   <%= text_field_tag :number %>
 
