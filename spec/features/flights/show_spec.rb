@@ -27,7 +27,13 @@ RSpec.describe 'As a visitor' do
     end
 
     it 'I also see the airline and a list of all passengers on the flight' do
+      visit "/flights/#{@flight1.id}"
 
+      expect(page).to have_content(@airline.name)
+      expect(page).to have_content(@passenger1.name)
+      expect(page).to have_content(@passenger2.name)
+      expect(page).to have_content(@passenger3.name)
+      expect(page).to have_content(@passenger4.name)
     end
   end
 end

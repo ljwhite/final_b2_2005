@@ -1,0 +1,18 @@
+<h1>Flight Show Page</h1>
+
+<ul>
+  <li>Flight Number: <%= @flight.number %></li>
+  <li>Date: <%= @flight.date %></li>
+  <li>Departure Time: <%= @flight.time %></li>
+  <li>Departure City: <%= @flight.departure %></li>
+  <li>Arrival City: <%= @flight.arrival %></li>
+</ul>
+
+<p>Airline: <%= @flight.airline.name %></p>
+
+Passengers
+<% @flight.passengers.each do |passenger| %>
+<ul>
+  <li><%= passenger.name %></li>
+</ul>
+<% end %>
